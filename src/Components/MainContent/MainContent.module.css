@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.mainImg {
+  width: 90%;
+  height: 50%;
+}
+
+.MainContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Staatliches";
+  font-size: 6rem;
+  letter-spacing: 0px;
+}
+
+@media only screen and (max-width: 762px) {
+  h1 {
+    font-size: 4.5rem;
+    line-height: 4.3rem;
+    margin-top: 0.2rem;
+  }
+  .mainImg {
+    height: 21rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .MainContent {
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+  }
+}

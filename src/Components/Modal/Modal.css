@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.modal-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  height: 39rem;
+  padding: 40px;
+}
+
+.modal-body a {
+  color: gray;
+}
+
+.modal-body h2 {
+  width: 95%;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: "Staatliches";
+}
