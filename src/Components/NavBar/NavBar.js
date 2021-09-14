@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from 'react'
+
 import styles from './NavBar.module.css'
 import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch ,faHeart,  faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import SearchModal from '../SearchModal/searchModal'
 
-
-
 // Images Import
+
 import NikeLogo from '../../Images/LandingPage/nike logo.png'
 
 function NavBar() {

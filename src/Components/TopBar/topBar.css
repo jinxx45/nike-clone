@@ -3,3 +3,22 @@
     display: none;
   }
 }
+
+.modal-items {
+  padding: 1.5rem;
+  margin-top: 6%;
+  margin-left: 33%;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+  background-color: white;
+  font-size: 0.8rem;
+}
+.form-control {
+  font-family: "Anton", sans-serif;
+  font-size: 0.8rem;
+}
+
+.modal-items a {
+  color: gray;
+}
