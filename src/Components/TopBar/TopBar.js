@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import styles from './topbar.module.css'
+import './topBar.css'
+
 
 import SignInModal from '../Modal/SignInModal';
 
@@ -12,7 +14,8 @@ function TopBar() {
   const [modalShow, setModalShow] = React.useState(false);
     return (
       <>
-        <div className={styles.topbar}>
+      <div className="cc">
+      <div className={styles.topbar}>
            {/* Left Logo */}
            <img className="me-auto" src={BasketballLogo} height="20" width="25" alt="" />
 
@@ -29,6 +32,8 @@ function TopBar() {
       
 
         </div>
+      </div>
+        
       </>
     )
 }

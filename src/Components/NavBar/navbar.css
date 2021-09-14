@@ -37,7 +37,10 @@
   }
   .navbar-toggler {
     position: absolute;
-    right: 8rem;
+    right: 2rem;
+  }
+  .icons-nav {
+    margin-right: 5.7rem;
   }
 }
 

@@ -52,8 +52,11 @@ function NavBar() {
     <form class="d-flex">
         <FontAwesomeIcon className="search-icon collapse navbar-collapse" icon={faSearch} />
         <input  onClick={() => setModalShow(true)} class="form-control collapse navbar-collapse searchbar me-2 text-muted" type="search" placeholder="Search" aria-label="Search"/>
-        <FontAwesomeIcon size='lg' className="mt-1 mx-3 "   icon={faHeart} />
-        <FontAwesomeIcon size='lg' className="mt-1 mx-3 right-icon"   icon={faShoppingBag} />
+        <div className="icons-nav">
+            <FontAwesomeIcon  size='lg' className="mt-1 mx-3 "   icon={faHeart} />
+            <FontAwesomeIcon  size='lg' className="mt-1 mx-3 right-icon"   icon={faShoppingBag} />
+        </div>
+        
 
         <SearchModal
         show={modalShow}
