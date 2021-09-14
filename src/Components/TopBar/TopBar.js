@@ -7,7 +7,7 @@ import './topBar.css'
 import {Form}  from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faWindowClose } from '@fortawesome/free-solid-svg-icons';
-import NikeLogo from '../../Images/LandingPage/nike logo.png'
+
 
 import SignIN  from  '@material-ui/core/Modal';
 
@@ -57,14 +57,15 @@ function TopBar() {
     setOpen(true);
   };
 
-  const handleClose = () => {
+  const handleClose = (e) => {
+    e.preventDefault();
     setOpen(false);
   };
 
   const body = (
     
     <div className="modal-items">
-      <a  onClick={handleClose} href=""> <FontAwesomeIcon   size='lg' style={{marginLeft:"25rem"}}   icon={faWindowClose} /> </a>
+      <a onClick={handleClose} href=""> <FontAwesomeIcon   size='lg' style={{marginLeft:"25rem"}}   icon={faWindowClose} /> </a>
               
               <h4 style={{fontFamily:"'Anton', sans-serif;",fontSize:"1.1rem" , width:"200px"}} className=" pt-5 mb-4  text-upper fw-bold text-center" >YOUR ACCOUNT FOR EVERYTHING  NIKE</h4>
               <Form>

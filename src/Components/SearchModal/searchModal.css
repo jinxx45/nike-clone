@@ -13,6 +13,11 @@
   display: flex;
 }
 
+.modal-header {
+  border: none;
+  margin-bottom: -2.5rem;
+}
+
 .search-modal {
   height: 270px;
 }

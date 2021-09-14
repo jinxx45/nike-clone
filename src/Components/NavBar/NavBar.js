@@ -14,6 +14,11 @@ import NikeLogo from '../../Images/LandingPage/nike logo.png'
 
 function NavBar() {
   const [modalShow, setModalShow] = React.useState(false);
+
+  const handleCloseParent = () =>
+  {
+    setModalShow(false); 
+  }
     return (
         <>
         <div className={styles.navBar}>
@@ -59,6 +64,7 @@ function NavBar() {
         
 
         <SearchModal
+        close = {handleCloseParent}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
