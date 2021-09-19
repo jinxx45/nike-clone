@@ -8,13 +8,16 @@ import MainContent from "./Components/MainContent/MainContent";
 
 function App() {
   return (
-    <div>
+    <>
+      <div style={{position:"fixed"}} className="fixing-pos">
       <TopBar/>
       <NavBar/>
       <OfferBar/>
       <MainContent/>
 
-    </div>
+      </div>
+     
+    </>
   );
 }
 

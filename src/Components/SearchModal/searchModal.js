@@ -22,7 +22,7 @@ function SearchModal(props) {
         <Modal.Body  className="search-modal" >
         
         <div className="d-flex itemsSearch ">
-            <FontAwesomeIcon  className="search-icon-big " icon={faSearch} />
+            <FontAwesomeIcon style={{left:"30%",top:"22%"}}  className="search-icon-big " icon={faSearch} />
             <img src={NikeLogo}  height="20" width="40" alt="" />
             <input  class="form-control text-center searchbar-big  text-muted" type="search" placeholder="Search" aria-label="Search"/>
             <a onClick={close} > <FontAwesomeIcon  size='lg' className="mt-1  ms-5 "   icon={faWindowClose} /> </a>        

@@ -11,6 +11,9 @@ import SearchModal from '../SearchModal/searchModal'
 // Images Import
 
 import NikeLogo from '../../Images/LandingPage/nike logo.png'
+import ShoppingBagLogo from '../../Images/LandingPage/shopping-bag.png'
+import HelpLogo from '../../Images/LandingPage/information.png'
+import OrderLogo from '../../Images/LandingPage/box.png'
 
 function NavBar() {
   const [modalShow, setModalShow] = React.useState(false);
@@ -23,7 +26,8 @@ function NavBar() {
         <>
         <div className={styles.navBar}>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+          <section className="desktop-nav">
+          <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand " href="#">
         <img src={NikeLogo} height="25" width="50" alt="" />
@@ -72,6 +76,72 @@ function NavBar() {
       </form>
   </div>
 </nav>
+          </section>
+
+
+          <section className="mobile-nav">
+            <div onClick={() => setModalShow(true)} className="onclick-search-modal">
+            <FontAwesomeIcon style={{right:"4.5rem",top:"0.3rem",height:"22px",width:"22px"}} className="search-icon " icon={faSearch} />
+            </div>
+          
+          <nav role='navigation'>
+		<div  id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+				<a href="#">
+					<li>Men <a href="">&gt;</a></li>
+				</a>
+				<a href="#">
+					<li className="me-auto">Women <a href="">&gt;</a></li>
+				</a>
+				<a href="#">
+					<li>Kids <a href="">&gt;</a></li>
+				</a>
+				<a href="#">
+					<li>Customize <a href="">&gt;</a></li>
+				</a>
+				<a href="#">
+					<li>Sales <a href="">&gt;</a></li>
+				</a>
+				<a href="#">
+					<li>SKRNS <a href="">&gt;</a></li>
+				</a>
+
+        <p className="fw-bold" style={{marginTop:"1.1rem",fontSize:"1.1rem",width:"290px"}}>Become a Nike Member for the best products, inspiration and stories in sport. <a href=""> Learn more </a> </p>
+
+        <div className="button-mobile-nav">
+          <button className="btn btn-dark mx-2 fw-bold"> Join Us</button>
+          <button className="btn btn-light mx-4 fw-bold"> Sign In </button>
+        </div>
+
+        <div style={{marginTop:"2.7rem"}} className="mobile-nav-icon-with-text">
+          <div className="icon-with-text d-flex">
+              <img src={ShoppingBagLogo}  alt="" />
+              <p>Bag</p>
+          </div>
+          <div className="icon-with-text d-flex">
+            <img src={OrderLogo} alt="" />
+            <p>Orders</p>
+          </div>
+          <div className="icon-with-text d-flex">
+            <img src={HelpLogo} alt="" />
+            <p>Help</p>
+          </div>
+        </div>
+
+			</ul>
+
+      
+		</div>
+	</nav>
+
+  
+          </section>
+
+  
             
         </div>
         </>
